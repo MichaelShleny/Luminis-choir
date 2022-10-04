@@ -1,0 +1,32 @@
+.sponsors{
+    background-image: linear-gradient(rgb(4, 19, 44), rgb(34, 33, 33));
+
+}
+
+.sponsors__title{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 12px 0;
+    color: white;
+}
+
+.sponsors__logo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+}
+
+.sponsor{
+    max-width: 100px;
+}
+
+.sponsorthin{
+    max-width: 200px;
+}
+
+.sponsor3{
+    border-radius: 99px;
+}

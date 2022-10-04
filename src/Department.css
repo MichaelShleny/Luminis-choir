@@ -1,0 +1,54 @@
+#department{
+    background-image: linear-gradient(white, rgb(4, 19, 44));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.leader__section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elena__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.danil__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elena__img--department{
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.elena__img--wrapper--department{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.danil__img--department{
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.danil__img--wrapper--department{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.lead__color{
+    color: white;
+    text-decoration: none;
+}
+

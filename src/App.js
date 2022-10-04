@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Nav from './Nav'
+import Library from './Library'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ProtectedRoute from './firebase/ProtectedRoute';
+//import Footer from './Footer'
+import Home from './Home'
+import Login from './firebase/Login'
+import Elena from './Elena';
+import Danil from './Danil';
+import { AuthContextProvider } from './context/AuthContext';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    return (
+    <div>
+        <AuthContextProvider>
+        <BrowserRouter>
+            <Routes>
+            <Route path = '/' element = { <Home /> }/>
+            <Route path = 'login' element = { <Login /> }/>
+            <Route path ='Elena' element = { <Elena />} />
+            <Route path ='Danil' element = { <Danil />} />
+            <Route path = 'library' element = { <Library />} /> 
+            </Routes>
+        </BrowserRouter>
+        </AuthContextProvider>
     </div>
   );
 }

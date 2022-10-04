@@ -1,0 +1,38 @@
+.danil{
+    display: flex;
+    background-image: url('assets/danil_background.png');
+}
+
+.elena__img{
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+.elena__img--wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 70px;
+    
+}
+
+.elena__heading{
+    display: flex;
+    justify-content: center;
+    margin: 36px 0;
+}
+
+.elena__info{
+    max-width: 750px;
+    margin: 18px 70px;
+    background-color: lightgrey;
+    padding: 0 12px;
+    border-style:groove;
+    /*box-shadow: 0 10px 40px 0 blue;*/
+}
+
+.elena__para{
+    margin-bottom: 12px;
+    font-size: 24px;
+}

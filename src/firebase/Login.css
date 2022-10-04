@@ -1,0 +1,114 @@
+.login__full{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding:24px;
+}
+ 
+#login{
+    max-width: 1200px;
+}
+
+.members__box{
+    margin:24px 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.members__wrapper{
+    display: flex;
+    justify-content: center;
+    max-width: 670px;
+}
+
+.members{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    padding: 8px 44px;
+    background-color: orange;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.members__para--wrapper{
+    max-width: 640px;
+}
+
+.members__para{
+    padding: 18px;
+    border-style:double;
+    font-weight: 500;
+}
+
+.login__form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 54px;
+    background-color: white;
+}
+
+.login__account{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__heading{
+    background-color: orange;
+    padding: 18px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.login__info{
+    margin: 24px;
+}
+
+.email__bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.address{
+    margin-bottom: 8px;
+}
+
+.address__bar{
+    border-radius: 0%;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.address__bar--pass{
+    border-radius: 0%;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.password__bar{
+    margin: 18px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.address__pass{
+    margin-bottom: 8px;
+}
+
+.btn__signIn{
+    padding: 8px 16px;
+    background-color: orange;
+    font-weight: 500;
+    transition: all 300ms ease;
+}
+
+.btn__signIn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
