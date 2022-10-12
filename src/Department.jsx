@@ -7,12 +7,13 @@ import  Danil1  from './assets/danil_pic.jpeg'
 const Department = () => {
     return (
         <div>
+            <div className = "row">
             <div section id="department">
                 <div className="leader__section">
                 <div className="danil__section">
-                        <h6 className="lead__headers">Artistic Director</h6>
-                        <div className="danil__img--wrapper-department">
-                            <img className="danil__img--department" src={Danil1} />
+                        <h6 className="leader__headers">Artistic Director</h6>
+                        <div className="elena__img--wrapper-department">
+                            <img className="elena__img--department" src={Danil1} />
                         </div>
                         <span className="lead__name">
                             <Link style={{ textDecoration: "none" }} to="/danil"><p className="lead__color">Read more about Danil Biba</p></Link>
@@ -28,6 +29,7 @@ const Department = () => {
                         </span>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );

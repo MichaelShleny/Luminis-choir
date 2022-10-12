@@ -2,13 +2,17 @@ import React, { useState } from 'react';
 //import { useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext'
 import './Login.css'
+import { Link } from 'react-router-dom'
+import Luminis from '../assets/Luminis Choir.png'
+import { useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
 
     const [password, setPassword] = useState('')
     const [email, setEmail] = useState('')
     const [error, setError] = useState('')
-    //const navigate = useNavigate()
+    const navigate = useNavigate()
 
     const { signIn } = UserAuth()
 
@@ -17,7 +21,9 @@ const Login = () => {
         setError('')
         try{
             await signIn(email,password)
-            window.open('https://drive.google.com/drive/folders/132h6tWTU6_wszQEvxY_oRbGjUTyVUkUX')
+            //window.open('https://drive.google.com/drive/folders/132h6tWTU6_wszQEvxY_oRbGjUTyVUkUX')
+            window.location.assign('https://drive.google.com/drive/folders/132h6tWTU6_wszQEvxY_oRbGjUTyVUkUX')
+            console.log("clicked")
 
             //navigate('/redirect')
             //window.location.pathname = 'https://drive.google.com/drive/folders/132h6tWTU6_wszQEvxY_oRbGjUTyVUkUX'
@@ -29,6 +35,28 @@ const Login = () => {
     }
 
     return (
+        <div>
+        <nav section id="nav">
+                <div className="nav__container">
+                    <a className="logo__wrapper" href="/">
+                        <img className="luminis" src={Luminis}></img>
+                    </a>
+                    <div className="nav__links--wrapper">
+                        <ul className="nav__links">
+                            <li className="nav__link">
+                                <Link to="/" className="
+                        link__hover-effect
+                        nav__link--anchor">
+                                    Home</Link></li>
+                            <li className="nav__link">
+                                <a href="luminischoir@gmail.com" className="
+                        link__hover-effect
+                        nav__link--anchor">
+                                    Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         <div className="login__full">
             <section id = "login">
                     <div className="members__box">
@@ -59,6 +87,7 @@ const Login = () => {
                     </form>
             </section>
         </div>
+    </div>
     )
 }
 export default Login

@@ -1,9 +1,28 @@
+.row{
+    
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
 #department{
     background-image: linear-gradient(white, rgb(4, 19, 44));
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
+}
+
+.lead__name{
+    display: flex;
+    text-align: center;
+}
+
+@media(max-width:620px){
+    .leader__headers{
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 .leader__section{
@@ -16,12 +35,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 12px;
 }
 
 .danil__section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 12px;
 }
 
 .elena__img--department{

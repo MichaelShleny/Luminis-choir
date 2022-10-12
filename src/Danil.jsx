@@ -24,7 +24,7 @@ const Danil = () => {
                         and abilities, both individually and in choir setting. </p>
                     <p className="elena__para">In addition to many teaching and conducting experiences
                         in Belarus, Canada and Germany, Danil is also a piano player and co-founder of Trio
-                        Classic Hassiba. Since founding Luminis. He brought in the atmosphere of dedication,
+                        Classic Hassiba. Since founding Luminis, he had brought in the atmosphere of dedication,
                         accomplishment and passion for music in our newly founded Luminis Choir!</p>
                 </div>
             </div>

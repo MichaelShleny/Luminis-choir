@@ -1,8 +1,32 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
+import Luminis from './assets/Luminis Choir.png'
+import Footer from './Footer'
 
 const About = () => {
     return (
     <div>
+        <nav section id="nav">
+                <div className="nav__container">
+                    <a className="logo__wrapper" href="/">
+                        <img className="luminis" src={Luminis}></img>
+                    </a>
+                    <div className="nav__links--wrapper">
+                        <ul className="nav__links">
+                            <li className="nav__link">
+                                <Link to="/" className="
+                        link__hover-effect
+                        nav__link--anchor">
+                                    Home</Link></li>
+                            <li className="nav__link">
+                                <Link to = "/contact" className="
+                        link__hover-effect
+                        nav__link--anchor">
+                                    Contact us</Link></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         <section id = "about">
             <div className="container">
                 <div className="row">
@@ -35,7 +59,7 @@ const About = () => {
                             </div>  
                             
                             <div className= "section__description section__description3">
-                            <h4 className= "about__subtitle">Our Operation</h4>
+                            <h4 className= "about__subtitle">Our Goals</h4>
                             <p className="about__para"> Luminis Choir strives to: </p>
                                <p className = "about__para para__indent"> ● Provide a fun, inclusive and accessible place for singers of all ages and ability to
                                 discover the and transformative power of group singing;<br/>
@@ -102,6 +126,7 @@ const About = () => {
                 </div>
             </div>
         </section>
+        <Footer />
     </div>
     );
 }

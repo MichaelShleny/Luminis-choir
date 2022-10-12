@@ -3,6 +3,14 @@ import {HashLink as Link } from 'react-router-hash-link'
 import Luminis from './assets/Luminis Choir.png'
 
 function Nav() {
+
+  if (document) {
+    const stylesheet = document.createElement("link");
+    stylesheet.rel = "stylesheet";
+    
+    document.head.appendChild(stylesheet);
+  }
+
   return (
     <div>
       <nav section id= "nav">
@@ -18,7 +26,7 @@ function Nav() {
                         nav__link--anchor">
                         Home</Link></li>
                     <li className= "nav__link about">
-                    <Link to="#about" className="
+                    <Link to="/about" className="
                         link__hover-effect
                         nav__link--anchor">
                         About</Link></li>
@@ -26,21 +34,22 @@ function Nav() {
                     <Link to="#department" className="
                         link__hover-effect
                         nav__link--anchor">
-                        Department</Link></li>
+                        Our Team</Link></li>
                     <li className= "nav__link library">
                       <Link to="/library" className="
                         link__hover-effect
                         nav__link--anchor">
                         Library</Link></li>
-                    <li className= "nav__link contact">
-                        <a href = "luminischoir@gmail.com" className="
+                    <li className= "nav__link contact_nav" onClick = "toggleModal()">
+                        <Link to="/contact" className="
                         link__hover-effect
                         nav__link--anchor">
-                        Contact us</a></li>
+                        Contact us</Link></li>
                 </ul>
               </div>
         </div>
       </nav>
+      
     </div>
   )
 }
