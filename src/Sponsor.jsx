@@ -1,20 +1,16 @@
 import React from 'react';
 import './Sponsors.css'
-import Sponsor1 from './assets/sponsor1.png'
 import Sponsor2 from './assets/sponsor2.png'
 import Sponsor3 from './assets/sponsor3.png'
-import Sponsor4 from './assets/sponsor4.png'
+import Sponsor4 from './assets/IMG_3353.jpg'
 
 const Sponsor = () => {
     return (
         <div className="sponsors__wrapper">
             <div className="sponsors">
-                <h7 className="sponsors__title">THANK YOU TO OUR SEASONS SPONSORS & PARTNERS </h7>
+                <h7 className="sponsors__title">THANK YOU TO OUR SPONSORS & PARTNERS </h7>
             </div>
             <div className="sponsors__logo">
-                <a href="https://torontovka.com/" target="_blank">
-                    <img className=" sponsorthin" src={Sponsor1} />
-                </a>
                 <a href = "https://www.kartina.tv/en" target = "_blank">
                 <img className="sponsor" src={Sponsor2} />
                 </a>

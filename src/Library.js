@@ -32,35 +32,56 @@ const Library = () => {
                 </div>
             </nav>
             <section id="library">
-                <div className="library__content--wrapper">
-                    <div className="content">
-                        <div className="content1">
-                            <Link style={{ textDecoration: "none" }} to="/login" >
-                                <div className="login__required library__img1">
-                                    <img className="library__img" src={MusicSheets2}></img>
-                                    <h8 className="login__headings">Login Required</h8>
-                                </div>
-                            </Link>
-                            <Link style={{ textDecoration: "none" }} to="/login" >
-                                <div className="login__required library__img2">
-                                    <img className="library__img" src={Exercise2} href="https://drive.google.com/drive/folders/1oVKvIbvfYRCkNlfigZ-IXXAsagES_CuJ" target="_blank"></img>
-                                    <h8 className="login__headings">Login Required</h8>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="content2">
+                <div className="row">
+                    <div className="library__content--wrapper">
+                        <div className="content">
+                            <div className="content__pre">
+                                <Link style={{ textDecoration: "none" }} to="/login" >
+                                    <div className="login__required library__img1">
+                                        <div className="library__img--wrapper">
+                                            <img className="library__img" src={MusicSheets2}href="https://drive.google.com/drive/folders/1oVKvIbvfYRCkNlfigZ-IXXAsagES_CuJ" target="_blank"></img>
+                                        </div>
+                                            <div className="login__headings--wrapper">
+                                                <h8 className="login__headings">Login Required</h8>
+                                            </div>
+                                        
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="content__pre">
+                                <Link style={{ textDecoration: "none" }} to="/login" >
+                                    <div className="login__required library__img2">
+                                    <div className="library__img--wrapper">
+                                            <img className="library__img" src={Exercise2}href="https://drive.google.com/drive/folders/1oVKvIbvfYRCkNlfigZ-IXXAsagES_CuJ" target="_blank"></img>
+                                        </div>
+                                        <div className="login__headings--wrapper">
+                                            <h8 className="login__headings">Login Required</h8>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
                             <Link style={{ textDecoration: "none" }} to="/login" >
                                 <div className="login__required">
-                                    <img className="library__img" src={WarmUp2} href="https://drive.google.com/drive/folders/1oVKvIbvfYRCkNlfigZ-IXXAsagES_CuJ" target="_blank"></img>
-                                    <h8 className="login__headings">Login Required</h8>
+                                <div className="library__img--wrapper">
+                                            <img className="library__img" src={WarmUp2}href="https://drive.google.com/drive/folders/1oVKvIbvfYRCkNlfigZ-IXXAsagES_CuJ" target="_blank"></img>
+                                        </div>
+                                    <div className="login__headings--wrapper">
+                                        <h8 className="login__headings">Login Required</h8>
+                                    </div>
                                 </div>
                             </Link>
-                            <Link style={{ textDecoration: "none" }} to="/login" >
-                                <div className="login__required">
-                                    <img className="library__img" src={Solfege2} href="https://drive.google.com/drive/folders/1oVKvIbvfYRCkNlfigZ-IXXAsagES_CuJ" target="_blank"></img>
-                                    <h8 className="login__headings">Login Required</h8>
-                                </div>
-                            </Link>
+                            <div className="content__pre">
+                                <Link style={{ textDecoration: "none" }} to="/login" >
+                                    <div className="login__required">
+                                    <div className="library__img--wrapper">
+                                            <img className="library__img" src={Solfege2}href="https://drive.google.com/drive/folders/1oVKvIbvfYRCkNlfigZ-IXXAsagES_CuJ" target="_blank"></img>
+                                        </div>
+                                        <div className="login__headings--wrapper">
+                                            <h8 className="login__headings">Login Required</h8>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

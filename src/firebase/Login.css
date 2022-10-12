@@ -1,8 +1,8 @@
 .login__full{
-    height: 600px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: lightgrey;
+    background-image: url('../assets/bluestars.jpeg');
     padding:24px;
 }
  
@@ -37,6 +37,8 @@
 }
 
 .members__para--wrapper{
+    text-align: center;
+    background-color: aliceblue;
     max-width: 640px;
 }
 

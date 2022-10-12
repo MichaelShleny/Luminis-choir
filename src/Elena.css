@@ -19,6 +19,7 @@
 .elena__heading{
     display: flex;
     justify-content: center;
+    margin: 36px 0;
 }
 
 .elena__info{

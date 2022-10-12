@@ -8,7 +8,7 @@ import Department from './Department'
 
 const Home = () => {
     return(
-    <><Header /><About />< Department /><Gallery /><Sponsor /> <Footer /></>
+    <><Header />< Department /><Gallery /><Sponsor /> <Footer /></>
     )
 }
 export default Home
