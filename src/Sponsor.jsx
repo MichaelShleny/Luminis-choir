@@ -18,7 +18,7 @@ const Sponsor = () => {
                     <img className="sponsor sponsor3" src={Sponsor3} />
                 </a>
                 <a href="https://www.gtaimplant.com/out-team/dr-kirill-khromov" target="_blank">
-                    <img className=" sponsorthin" src={Sponsor4} />
+                    <img className=" sponsor sponsorthin" src={Sponsor4} />
                 </a>
             </div>
         </div>

@@ -23,10 +23,10 @@ const Library = () => {
                         nav__link--anchor">
                                     Home</Link></li>
                             <li className="nav__link">
-                                <a href="luminischoir@gmail.com" className="
+                                <Link to="/contact" className="
                         link__hover-effect
                         nav__link--anchor">
-                                    Contact us</a></li>
+                                    Contact Us</Link></li>
                         </ul>
                     </div>
                 </div>

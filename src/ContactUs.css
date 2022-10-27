@@ -15,23 +15,30 @@ h6{
     background-color: white;
     max-width: 100%;
     justify-content: space-around;    
-    padding: 66px 24px;
+    padding: 66px 24px 66px 24px;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .contact__wrapper1{
     display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 790px){
     .contact__wrapper1{
         flex-direction: column;
     }
+
+}
+
+.maps__img{
+    max-width: 40vw;
 }
 
 .map__img--wrapper{
-    max-width: 840px;
+    display: flex;
+    align-items: center;
 }
 
 .address{
@@ -57,11 +64,6 @@ h6{
 
 .contact__inquiry{
     padding: 56px 0;
-}
-
-.map__img--wrapper{
-    display: flex;
-    align-items: center;
 }
 
 .map__img--wrapper:hover{

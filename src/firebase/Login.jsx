@@ -52,7 +52,7 @@ const Login = () => {
                                 <a href="luminischoir@gmail.com" className="
                         link__hover-effect
                         nav__link--anchor">
-                                    Contact us</a></li>
+                                    Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

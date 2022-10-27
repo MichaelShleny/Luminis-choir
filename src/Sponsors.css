@@ -16,8 +16,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 24px;
-    background-image: linear-gradient(rgb(4, 19, 44), white);
-
+    background-color: rgb(4, 19, 44);
 }
 
 .sponsor{
@@ -30,4 +29,10 @@
 
 .sponsor3{
     border-radius: 99px;
+}
+
+@media(max-width:500px){
+    .sponsor{
+        max-width: 20vw;
+    }
 }

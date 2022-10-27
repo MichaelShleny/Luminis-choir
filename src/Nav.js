@@ -1,6 +1,6 @@
 import React from 'react'
 import {HashLink as Link } from 'react-router-hash-link'
-import Luminis from './assets/Luminis Choir.png'
+import Luminis from './assets/luminis.png'
 
 function Nav() {
 
@@ -44,12 +44,11 @@ function Nav() {
                         <Link to="/contact" className="
                         link__hover-effect
                         nav__link--anchor">
-                        Contact us</Link></li>
+                        Contact Us</Link></li>
                 </ul>
               </div>
         </div>
       </nav>
-      
     </div>
   )
 }
