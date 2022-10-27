@@ -45,8 +45,8 @@ const ContactUs = () => {
                                         <p className=" gold">elena.shlenskiy@gmail.com</p>
                                     </div>
                                     <div>
-                                        <p className="address bold">Danil Baba, Artistic Director</p>
-                                        <p className=" gold">danilbaba@gmail.com</p>
+                                        <p className="address bold">Danil Biba, Artistic Director</p>
+                                        <p className=" gold">danilbiba@gmail.com</p>
                                     </div>
                                     <div>
                                         <p className="address bold">Vadim Shlenskiy,  Director of Artistic Operations</p>
@@ -62,7 +62,7 @@ const ContactUs = () => {
                         </div>
                         <div className="contact__inquiry">
                             <p className="address">For inquiries into Luminis Choir
-                                please contact luminischoir@gmail.com.</p>
+                                please contact <span className = "gold">luminischoir@gmail.com</span>.</p>
                         </div>
                     </div>
                 </div>

@@ -22,7 +22,7 @@ const About = () => {
                                 <Link to = "/contact" className="
                         link__hover-effect
                         nav__link--anchor">
-                                    Contact us</Link></li>
+                                    Contact Us</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -32,11 +32,10 @@ const About = () => {
                 <div className="row">
                     <h3 className="about__title">About</h3>
                     <div className= "about__wrapper">
-
                             <div className= "section__description">
                                 <div className = "section__description1">
                                     <h4 className= "about__subtitle">Our Vision</h4>
-                                    <p className= "about__para">Luminis Choir is 
+                                    <p className= "about__para__about">Luminis Choir is 
                                         creating positive and passionate experiences through learning and
                                         performing a wide range of choral music.We believe singing builds 
                                         community and enriches the lives of our singers emotionally,
@@ -52,7 +51,7 @@ const About = () => {
                             </div>
                             <div className= "section__description section__description2">
                                 <h4 className= "about__subtitle">Our Mission</h4>
-                                <p className= "about__para">Luminis Choir aims to make a difference 
+                                <p className= "about__para__about">Luminis Choir aims to make a difference 
                                     in the lives of our singers, our audiences and
                                     our community through the power of group singing.
                                 </p>
@@ -60,8 +59,8 @@ const About = () => {
                             
                             <div className= "section__description section__description3">
                             <h4 className= "about__subtitle">Our Goals</h4>
-                            <p className="about__para"> Luminis Choir strives to: </p>
-                               <p className = "about__para para__indent"> ● Provide a fun, inclusive and accessible place for singers of all ages and ability to
+                            <p className="about__para__about"> Luminis Choir strives to: </p>
+                               <p className = "about__para__about para__indent"> ● Provide a fun, inclusive and accessible place for singers of all ages and ability to
                                 discover the and transformative power of group singing;<br/>
                                 ● Continually seek performance opportunities to showcase the work of our
                                 members, drive new membership and provide service to our community;<br/>
@@ -85,9 +84,9 @@ const About = () => {
                             
                             <div className= "section__description section__description4">
                             <h4 className= "about__subtitle">Values</h4>
-                            <p className= "about__para">Luminis Choir has a range of values that we believe should be upheld by both
+                            <p className= "about__para__about">Luminis Choir has a range of values that we believe should be upheld by both
                                 leadership and choir members.</p>
-                                <p className = "about__para para__indent"> ● Integrity - The values which are promoted as a choir should be matched by
+                                <p className = "about__para__about para__indent"> ● Integrity - The values which are promoted as a choir should be matched by
                                 members in the way they treat themselves and other members.<br/>
                                 ● Transparency - We are open and transparent about our beliefs and mission and
                                 in matters of publicity, fundraising, employment, etc.<br/>

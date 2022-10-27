@@ -1,11 +1,24 @@
 .danil{
     display: flex;
     background-image: url('assets/danil_background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;;
 }
 
 .elena__img{
-    max-width: 250px;
-    border-radius: 50%;
+    max-width: 20vw;
+    border-radius: 5%;
+}
+
+.about__para{
+    font-size: 2.5vw;
+    line-height: 1.5;
+    padding-bottom: 90px;
+    /*border-bottom: 4px dashed black;*/
+    margin-bottom: 10px;
+    padding: 0 22px 22px 22px;
 }
 
 .elena__img--wrapper{
@@ -23,12 +36,16 @@
 }
 
 .elena__info{
-    max-width: 750px;
-    margin: 18px 70px;
+    max-width: 85vw;
+    margin: 50px 30px 70px 30px;
     background-color: lightgrey;
-    padding: 0 12px;
     border-style:groove;
     /*box-shadow: 0 10px 40px 0 blue;*/
+}
+
+@media(max-width:600px){
+    .about__para{
+    }
 }
 
 .elena__para{
@@ -39,4 +56,29 @@
 
 .lead__name{
     margin-top:24px;
+}
+
+@media (max-width:800px){
+    .danil{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .elena__img--wrapper{
+        padding: 24px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__para{
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width:800px){
+    .elena__info{
+        padding: 0;
+    }
 }
