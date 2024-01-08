@@ -1,8 +1,8 @@
 import React from 'react';
 import './Department.css';
 import { Link } from 'react-router-dom'
-import  Elena1  from './assets/elena_pic.jpeg'
-import  Danil1  from './assets/danilnew.jpg'
+import  Elena1  from './assets/elenaFinal.png'
+import  Danil1  from './assets/danilFinal.png'
 
 const Department = () => {
     return (

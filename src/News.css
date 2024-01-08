@@ -1,0 +1,63 @@
+#news{
+    background-color:rgb(40, 40, 40);
+    width: 100%;
+}
+
+.trytry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsTitle{
+    color: white;
+    padding: 24px 0;
+    font-size: 36px;
+    font-family:Apple Chancery, cursive;
+    text-align: center;
+}
+
+.news__Describe{
+    color: white;
+    font-size: 20px;
+    font-family:Gill Sans, sans-serif;
+    text-align: center;
+}
+
+.church__img--wrapper{
+    max-width: 500px;
+    padding: 24px 24px;
+}
+
+.newsButtonWhole{
+    display: flex;
+    justify-content: center;
+}
+
+.news__info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.news__button--wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+.news__button{
+    padding: 8px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    max-width: 90px;
+    
+}
+
+@media(max-width:650px){
+    .trytry{
+        flex-direction: column;
+    }
+}

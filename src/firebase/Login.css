@@ -4,6 +4,9 @@
     flex-direction: column;
     background-image: url('../assets/bluestars.jpeg');
     padding:24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
  
 #login{
@@ -50,9 +53,18 @@
 
 .login__form{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     margin: 0 54px;
     background-color: white;
+    width: 100%;
+}
+
+.login__form--wrapper{
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .login__account{
@@ -113,4 +125,10 @@
     cursor: pointer;
     transform: scale(1.1);
 
+}
+
+@media(max-width:700px){
+    .login__form{
+        margin: 0;
+    }
 }

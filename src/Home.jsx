@@ -4,12 +4,17 @@ import About from './About'
 import Gallery from './firebase/Gallery'
 import Footer from './Footer'
 import Sponsor from './Sponsor'
+import Testimonial from './Testimonial'
 import Department from './Department'
+import News from './News'
+import Support from './Support'
 
 const Home = () => {
-    return(
-    <><Header />< Department /><Gallery /><Sponsor /> <Footer /></>
+
+    return( 
+    <><Header /><Gallery /><Sponsor /><Footer /></>
     )
 }
+
 export default Home
 

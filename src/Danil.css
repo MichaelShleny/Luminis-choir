@@ -1,10 +1,10 @@
 .danil{
+    background-size: cover;
     display: flex;
     background-image: url('assets/danil_background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;;
 }
 
 .elena__img{
@@ -13,7 +13,7 @@
 }
 
 .about__para{
-    font-size: 2.5vw;
+    font-size: 20px;
     line-height: 1.5;
     padding-bottom: 90px;
     /*border-bottom: 4px dashed black;*/
@@ -36,18 +36,17 @@
 }
 
 .elena__info{
-    max-width: 85vw;
-    margin: 50px 30px 70px 30px;
+    margin: 50px 30px 40px 30px;
     background-color: lightgrey;
     border-style:groove;
     /*box-shadow: 0 10px 40px 0 blue;*/
 }
-
+/*
 @media(max-width:600px){
     .about__para{
     }
 }
-
+*/
 .elena__para{
     margin-bottom: 12px;
     font-size: 24px;
@@ -66,14 +65,13 @@
     }
 
     .elena__img--wrapper{
-        padding: 24px;
         margin: 0;
         display: flex;
         justify-content: center;
     }
 
     .about__para{
-        font-size: 3.5vw;
+        font-size: 10px;
     }
 }
 

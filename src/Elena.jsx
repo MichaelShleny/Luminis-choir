@@ -4,28 +4,13 @@ import './Elena.css';
 import Nav from './Nav'
 import { Link } from 'react-router-dom'
 import Luminis from './assets/Luminis Choir.png'
-
+import Footer from './Footer'
 
 
 const Elena = () => {
     return (
         <div>
-            <nav section id="nav">
-                <div className="nav__container">
-                    <a className="logo__wrapper" href="/">
-                        <img className="luminis" src={Luminis}></img>
-                    </a>
-                    <div className="nav__links--wrapper">
-                        <ul className="nav__links">
-                            <li className="nav__link">
-                                <Link to="/" className="
-                        link__hover-effect
-                        nav__link--anchor">
-                                    Home</Link></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <Nav/>
             <div className="danil">
                 <div className="elena__img--wrapper">
                     <img className="elena__img" src={Elena1} />
@@ -52,6 +37,7 @@ const Elena = () => {
                         music theory and history instructor, recital, and music festival organizer.</p>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

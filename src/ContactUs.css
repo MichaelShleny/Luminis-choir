@@ -1,6 +1,5 @@
 h6{
     box-sizing: border-box;
-    padding: 0px 0px 24px 0px;
     margin:0px;
 }
 
@@ -8,8 +7,7 @@ h6{
     background-color: rgb(20, 20, 75);
     border: solid 0.2em;
     border-top-color: white;
-}
-    
+} 
 
 .contact{
     background-color: white;

@@ -4,26 +4,20 @@ import Luminis from './assets/Luminis Choir.png'
 import './ContactUs.css'
 import Maps from './assets/mapsnew.png'
 import Footer from './Footer'
+import Nav from './Nav'
+import { useEffect } from 'react';
+
 
 const ContactUs = () => {
+
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
+      
     return (
         <div>
-            <nav section id="nav">
-                <div className="nav__container">
-                    <a className="logo__wrapper" href="/">
-                        <img className="luminis" src={Luminis}></img>
-                    </a>
-                    <div className="nav__links--wrapper">
-                        <ul className="nav__links">
-                            <li className="nav__link">
-                                <Link to="/" className="
-                        link__hover-effect
-                        nav__link--anchor">
-                                    Home</Link></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <Nav/>
             <div className="contact--wrapper">
                 <div className="row">
                     <div className="contact">
@@ -41,12 +35,16 @@ const ContactUs = () => {
                                 <div className="phone">Phone: 647.984.3849</div>
                                 <div className="directors">
                                     <div>
+                                        <p className="address bold">Danil Biba, Artistic Director</p>
+                                        <p className=" gold">danilbiba@gmail.com</p>
+                                    </div>
+                                    <div>
                                         <p className="address bold">Elena Shlenskiy, Choirmeister</p>
                                         <p className=" gold">elena.shlenskiy@gmail.com</p>
                                     </div>
                                     <div>
-                                        <p className="address bold">Danil Biba, Artistic Director</p>
-                                        <p className=" gold">danilbiba@gmail.com</p>
+                                        <p className="address bold">Marina Prozorova,  Director of Community Engagment</p>
+                                        <p className=" gold">marinaprozorova@gmail.com</p>
                                     </div>
                                     <div>
                                         <p className="address bold">Vadim Shlenskiy,  Director of Artistic Operations</p>
