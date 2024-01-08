@@ -1,49 +1,44 @@
 import React from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom'
 import Luminis from './assets/Luminis Choir.png'
 import Footer from './Footer'
+import Nav from './Nav'
+import { useEffect } from 'react';
 
 const About = () => {
+
+    useEffect(() => {
+       Aos.init({ duration:2000 })
+    }, []);
+
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
+
     return (
     <div>
-        <nav section id="nav">
-                <div className="nav__container">
-                    <a className="logo__wrapper" href="/">
-                        <img className="luminis" src={Luminis}></img>
-                    </a>
-                    <div className="nav__links--wrapper">
-                        <ul className="nav__links">
-                            <li className="nav__link">
-                                <Link to="/" className="
-                        link__hover-effect
-                        nav__link--anchor">
-                                    Home</Link></li>
-                            <li className="nav__link">
-                                <Link to = "/contact" className="
-                        link__hover-effect
-                        nav__link--anchor">
-                                    Contact us</Link></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <Nav/>
         <section id = "about">
             <div className="container">
                 <div className="row">
-                    <h3 className="about__title">About</h3>
+                    <h3 className="about__title">Who we are</h3>
                     <div className= "about__wrapper">
-
                             <div className= "section__description">
                                 <div className = "section__description1">
                                     <h4 className= "about__subtitle">Our Vision</h4>
-                                    <p className= "about__para">Luminis Choir is 
+                                    <p className= "about__para__about "> ● Luminis Choir is 
                                         creating positive and passionate experiences through learning and
-                                        performing a wide range of choral music.We believe singing builds 
+                                        performing a wide range of choral music. We believe singing builds 
                                         community and enriches the lives of our singers emotionally,
-                                        physically and psychologically.<br/>We value individualism, artistry, humor,
+                                        physically and psychologically.<br/>
+                                        ● We value individualism, artistry, humor,
                                         excellence, musical independence, discipline, potential, beauty, high expectations, 
                                         commitment, joy, soaring spirits and the value of every member, past and present. 
-                                        <br/>We are recognised for our energy and passion and are characterized by our sense of
+                                        <br/> 
+                                        ● We are recognised for our energy and passion and are characterized by our sense of
                                         humor and commitment. We are a diverse group of men and women who care passionately 
                                         about the quality of our vocal sound and the professionalism of our performance and 
                                         production values.
@@ -52,7 +47,7 @@ const About = () => {
                             </div>
                             <div className= "section__description section__description2">
                                 <h4 className= "about__subtitle">Our Mission</h4>
-                                <p className= "about__para">Luminis Choir aims to make a difference 
+                                <p className= "about__para__about about2">Luminis Choir aims to make a difference 
                                     in the lives of our singers, our audiences and
                                     our community through the power of group singing.
                                 </p>
@@ -60,8 +55,8 @@ const About = () => {
                             
                             <div className= "section__description section__description3">
                             <h4 className= "about__subtitle">Our Goals</h4>
-                            <p className="about__para"> Luminis Choir strives to: </p>
-                               <p className = "about__para para__indent"> ● Provide a fun, inclusive and accessible place for singers of all ages and ability to
+                            <p className="about__para__about"> Luminis Choir strives to: </p>
+                               <p className = "about__para__about para__indent about3"> ● Provide a fun, inclusive and accessible place for singers of all ages and ability to
                                 discover the and transformative power of group singing;<br/>
                                 ● Continually seek performance opportunities to showcase the work of our
                                 members, drive new membership and provide service to our community;<br/>
@@ -80,14 +75,11 @@ const About = () => {
                                 communication with our supporters, and in the recruitment and retention of
                                 participants and volunteers.</p>
                             </div>
-
-                        
-                            
-                            <div className= "section__description section__description4">
+                            <div data-aos = "fade-up" className= "section__description section__description4">
                             <h4 className= "about__subtitle">Values</h4>
-                            <p className= "about__para">Luminis Choir has a range of values that we believe should be upheld by both
+                            <p className= "about__para__about">Luminis Choir has a range of values that we believe should be upheld by both
                                 leadership and choir members.</p>
-                                <p className = "about__para para__indent"> ● Integrity - The values which are promoted as a choir should be matched by
+                                <p className = "about__para__about para__indent about4"> ● Integrity - The values which are promoted as a choir should be matched by
                                 members in the way they treat themselves and other members.<br/>
                                 ● Transparency - We are open and transparent about our beliefs and mission and
                                 in matters of publicity, fundraising, employment, etc.<br/>

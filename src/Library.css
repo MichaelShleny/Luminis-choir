@@ -1,0 +1,92 @@
+
+.library__content--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/bookshelf2.png');
+    height:60vh;
+    background-size:100% 100%;
+    background-color: rgb(191, 239, 251);
+}
+
+.login__required{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 84px;
+    padding: 0 54px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    top:40;
+    width:100%;
+}
+
+.library__img--wrapper{
+    max-width: 100px;
+}
+
+.library__img{
+    width: 100%;
+    box-shadow:0 10px 10px 0 black ;
+}
+
+@media (max-width:1080px){
+   .login__headings--wrapper{
+    opacity: 0;
+   } 
+}
+
+@media (max-width:800px){
+    
+   .login__required{
+    padding: 0px;
+   } 
+
+   .library__img--wrapper{
+    max-width: 90px;
+}
+}
+
+@media (max-width:500px){
+
+    .library__img--wrapper{
+        max-width: 70px;
+    }
+ }
+
+ @media (max-width:500px){
+
+    .library__img--wrapper{
+        max-width: 60px;
+    }
+ }
+
+.login__headings{
+    font-size: 15px;
+    opacity: 0;
+    color: black;
+    background-image: linear-gradient(rgb(191, 239, 251),white, rgb(191, 239, 251));
+    padding: 20px;
+    border-radius: 90px;
+}
+
+.login__headings--wrapper{
+    margin-top: 34px;
+}
+
+.login__required:hover .login__headings{
+    opacity: 1;
+    transform: scale(1.27);
+    transition:all 1000ms;
+    text-decoration: none;
+}
+
+.login__required:hover .library__img{
+    cursor: pointer;
+    transform: scale(1.07);
+    transition:all 1000ms;
+}

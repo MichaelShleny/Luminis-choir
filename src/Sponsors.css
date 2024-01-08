@@ -1,8 +1,9 @@
-.sponsors{
-    background-color: rgb(4, 19, 44);
+.sponsors__wrapper{
+    background-color: rgb(35, 36, 39);
 }
 .sponsors__title{
-    font-size: 24px;
+    font-family:'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    font-size: 18px;
     display: flex;
     justify-content: center;
     padding: 35px 0 12px 0;
@@ -16,8 +17,6 @@
     justify-content: space-around;
     align-items: center;
     padding: 24px;
-    background-image: linear-gradient(rgb(4, 19, 44), white);
-
 }
 
 .sponsor{
@@ -30,4 +29,10 @@
 
 .sponsor3{
     border-radius: 99px;
+}
+
+@media(max-width:500px){
+    .sponsor{
+        width: 60px;
+    }
 }

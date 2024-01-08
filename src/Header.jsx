@@ -11,17 +11,6 @@ const Header = () => {
             <section id="header">
                 <div className="row">
                     <div className="header__container">
-                        <div className="header__description">
-                            
-                            <div className="header__links">
-                                <a href="" className="header__link">
-                                    <i className="fab fa-facebook"></i>
-                                </a>
-                                <a href="" className="header__link">
-                                    <i className="fab fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
