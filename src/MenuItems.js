@@ -15,6 +15,16 @@ export const MenuItems = [
         cName:'dropdown-link'
     },
     {
+        title: "Milestones",
+        path: '/milestones',
+        cName:'dropdown-link'
+    },
+    {
+        title: "Gallery",
+        path: '/gallery',
+        cName:'dropdown-link'
+    },
+    {
         title: "Testimonials",
         path: '/testimonial',
         cName:'dropdown-link'

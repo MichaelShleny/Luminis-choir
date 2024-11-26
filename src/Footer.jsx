@@ -21,7 +21,7 @@ const Footer = () => {
                             <p className="details phone__footer">Phone: 647-984-3849</p>
                             <div className="details__contact"> 
                                 <Link to="/contact" className ="details contact__details">Visit our contact page</Link>
-                                <p className ="details">Copyright © 2022 Luminis Choir</p>
+                                <p className ="details">Copyright © 2024 Luminis Choir</p>
                             </div>
                         </div>
                     </div>  

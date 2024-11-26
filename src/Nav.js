@@ -64,6 +64,12 @@ function Nav() {
                       About<ArrowDropDownIcon style={{ padding: '0px', fontSize: '20px', verticalAlign: 'middle' }} /></Link>
                       {dropdown && <Dropdown />}
                       </li> 
+
+                  <li className="home__link">
+                    <Link to="/store" className="
+                        link__hover--effect
+                        nav__link--anchor">
+                      Store</Link></li>
                   
                   <li className="home__link">
                     <Link to="/library" className="
@@ -81,6 +87,7 @@ function Nav() {
                         link__hover--effect
                         nav__link--anchor">
                       Contact Us</Link></li>
+                     
                   <div className=" social__link--home">
                     <a className=" home__link link__hover--effect" href="https://m.facebook.com/105599518749691/" target="_blank"><FacebookIcon /></a>
                     <a className=" home__link link__hover--effect" href="https://instagram.com/luminischoir?igshid=YmMyMTA2M2Y=" target="_blank"><InstagramIcon /></a>
@@ -112,16 +119,27 @@ function Nav() {
                         nav__link--anchor" onClick={() => closeMenu()}>
                       News</Link></li>
                       <li className="nav__link">
+                    <Link to="/gallery" className="
+                        link__hover--effect
+                        nav__link--anchor" onClick={() => closeMenu()}>
+                      Gallery</Link></li>
+                      <li className="nav__link">
                     <Link to="/testimonial" className="
                         link__hover--effect
                         nav__link--anchor" onClick={() => closeMenu()}>
-                      Testimonials</Link></li>
+                      Testimonials</Link></li> 
                   <li className="nav__link library">
                     <Link to="/library" className="
                         links
                         link__hover--effect
                         nav__link--anchor" onClick={() => closeMenu()}>
-                      Library</Link></li>
+                      Library</Link></li> 
+                  <li className="nav__link library">
+                    <Link to="/milestones" className="
+                        links
+                        link__hover--effect
+                        nav__link--anchor" onClick={() => closeMenu()}>
+                      Milestones</Link></li> 
                   <li className="nav__link support">
                     <a href = "https://www.paypal.com/donate/?hosted_button_id=XWQACJKJ4Q5SA" className="
                         links
