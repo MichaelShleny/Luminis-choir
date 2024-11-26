@@ -8,6 +8,8 @@ import ChoirNews2 from './assets/choirnews2.jpg'
 import ChoirNews1 from './assets/newschoral.jpg'
 import LuminisHolidays from './assets/LuminisHolidays1.png'
 import Divina from './assets/divina.png'
+import Spring from './assets/spring-treasures-email.png'
+import Holidays from './assets/holidays2024.png'
 import Nav from './Nav'
 import './NewSeason.css'
 import Sponsor from './Sponsor'
@@ -25,25 +27,51 @@ const NewSeason = () => {
     return (
         <div>
             <Nav/>
-            <section id="news">
-                <div className = "news__date--wrapper">
-                </div>
-                {/*}
-                <div className = "trytry">
-                    <div className="church__img--wrapper">
-                        <img className="church__img" src={ChoirNews2}></img>
+            <div className="news__info"> 
+                <div className="newsTitle">Upcoming events!</div>
+            </div>
+            <div className = "season__concert--wrapper">
+                    <div className="news__img--wrapper">
+                        <img className="news__img" src={Holidays} />
                     </div>
-                    <div className="news__info">
-                        <div className="newsTitle">Upcoming events!</div>
-                        <p className="news__Describe">Come hear Luminis Choir as you’ve never heard it before.</p>
+                    <div className="concert__info">
+                        <div className = "concert__date">THURSDAY, DECEMBER 12, 2024 AT 7:30PM</div>
+                        <div className = "concert__location">Fairview Theatre, Fairview Public Library, 25 Fairview Mall Drive, North York</div>
+                        <div className = "concert__name">Luminis Holidays</div>
+                        <div className = "concert__singers">Join Luminis choir for a special Holiday Concert!</div>
+                        <div className = "concert__singers">With Special Guests</div>
+                        <div className = "concert__singers">Anastasia Pogorelova</div>
+                        <div className = "concert__singers">Nikki Clarke</div>
+                        <div className = "concert__singers">and Allegro Academy of Music Children ensemble</div>
+
+                        <div className="news__button--wrapper1">
+                            <a className = "news__button" href = "https://www.eventbrite.ca/e/luminis-holidays-choral-concert-tickets-1046394874237?fbclid=IwZXh0bgNhZW0CMTEAAR2sQ3puqFuayP6p5XOhzY7PPZ8ldR6DxFOinHdkvum8goSuSzsN_nvikEM_aem_HA5OMWq6ZqGV0anyrAbAWQ" target = "_blank" style={{ textDecoration: "none" }} >Tickets</a>
+                        </div>
                     </div>
                 </div>
-    */}
+            
+    
             <div className="news__info">
                 <div className="newsTitle">Previous Events</div>
             </div>
-            </section>
             <section id="newSeason">
+            <div className = "season__concert--wrapper">
+                    <div className="news__img--wrapper">
+                        <img className="news__img" src={Spring} />
+                    </div>
+                    <div className="concert__info">
+                        <div className = "concert__date">SATURDAY, MAY 11, 2024 AT 7:30PM</div>
+                        <div className = "concert__location">St. Mary's Anglican Church, 10030 Younge St, Richmond Hill</div>
+                        <div className = "concert__name">Spring Treasures</div>
+                        <div className = "concert__singers">Chorus York</div>
+                        <div className = "concert__singers">Jennifer Min-Young Lee, Artistic Director</div>
+                        <div className = "concert__singers">Luminis Choir</div>
+                        <div className = "concert__singers">Danil Biba, Artistic Director</div>
+                        <div className="news__button--wrapper1">
+                            <a className = "news__button" href = "https://www.chorusyork.ca/event/spring-treasures/" target = "_blank" style={{ textDecoration: "none" }} >Tickets</a>
+                        </div>
+                    </div>
+                </div>
             <div className = "season__concert--wrapper">
                     <div className="news__img--wrapper">
                         <img className="news__img" src={Divina} />

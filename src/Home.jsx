@@ -12,7 +12,7 @@ import Support from './Support'
 const Home = () => {
 
     return( 
-    <><Header /><Gallery /><Sponsor /><Footer /></>
+    <><Header /><Sponsor /><Footer /></>
     )
 }
 

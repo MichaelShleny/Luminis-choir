@@ -1,92 +1,96 @@
-
-.library__content--wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('./assets/bookshelf2.png');
-    height:60vh;
-    background-size:100% 100%;
-    background-color: rgb(191, 239, 251);
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.login__required{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 84px;
-    padding: 0 54px;
-}
-
-.content{
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    top:40;
-    width:100%;
-}
-
-.library__img--wrapper{
-    max-width: 100px;
-}
-
-.library__img{
+#fullPageImageLeadership {
+    height: calc(100vh - 64px); /* Adjusted for navigation bar height */
     width: 100%;
-    box-shadow:0 10px 10px 0 black ;
+    background: url('./assets/Lum4-min.jpg') center/cover no-repeat; /* Replace with the actual path to your full-page image */
 }
 
-@media (max-width:1080px){
-   .login__headings--wrapper{
-    opacity: 0;
-   } 
+#leadership {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    background-color: white; /* Change to white background */
 }
 
-@media (max-width:800px){
-    
-   .login__required{
-    padding: 0px;
-   } 
-
-   .library__img--wrapper{
-    max-width: 90px;
-}
+.leadership__content {
+    margin: 12px;
 }
 
-@media (max-width:500px){
+.leader__content {
+    display: flex;
+    background: linear-gradient(rgb(85, 85, 85) 0 0) bottom/ 80% 1px no-repeat;
+}
 
-    .library__img--wrapper{
-        max-width: 70px;
+.leader__wrap1 {
+    margin: 24px 0;
+    padding: 12px 12px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(236, 238, 248));
+}
+
+.leader__header {
+    font-size: 30px;
+    padding: 18px 0;
+    font-weight: 500;
+}
+
+.danil__header {
+    text-align: right;
+}
+
+.leader__wrap1 {
+    max-width: 800px;
+}
+
+.para__about {
+    font-size: 20px;
+    line-height: 25px;
+    position: relative;
+}
+
+.elena__wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 200px;
+}
+
+.elena__img1 {
+    height: 100%;
+    width: 100%;
+}
+
+.try {
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    margin: 24px 24px;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-name: fadeIn;
+}
+
+@media(max-width:700px) {
+    .leader__content {
+        display: flex;
+        flex-direction: column;
     }
- }
 
- @media (max-width:500px){
-
-    .library__img--wrapper{
-        max-width: 60px;
+    .try {
+        display: flex;
+        justify-content: center;
     }
- }
 
-.login__headings{
-    font-size: 15px;
-    opacity: 0;
-    color: black;
-    background-image: linear-gradient(rgb(191, 239, 251),white, rgb(191, 239, 251));
-    padding: 20px;
-    border-radius: 90px;
+    .leader__header {
+        text-align: center;
+    }
 }
 
-.login__headings--wrapper{
-    margin-top: 34px;
-}
-
-.login__required:hover .login__headings{
-    opacity: 1;
-    transform: scale(1.27);
-    transition:all 1000ms;
-    text-decoration: none;
-}
-
-.login__required:hover .library__img{
-    cursor: pointer;
-    transform: scale(1.07);
-    transition:all 1000ms;
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
